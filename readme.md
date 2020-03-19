@@ -1,3 +1,4 @@
+## Ссылка на рабочий сайт https://denisfront.github.io/BECO/dist/index.html
 #  проекта BECO
 
 > Перед установкой зависимостей и запуском проекта убедитесь, что у вас установлена [последняя версия Node.js & NPM](https://nodejs.org/en/download/current/), а так же 
@@ -27,4 +28,4 @@ $ npm run имя_скрипта
 ```sh
 $ yarn имя_скрипта
 ```
-## Ссылка на рабочий сайт https://denisfront.github.io/BECO/dist/index.html
+
