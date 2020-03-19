@@ -1,0 +1,42 @@
+.sidebar {
+  width: 255px;
+  background-color: $blue-sand;
+  transition: .4s;
+  position: relative;
+
+  &.active {
+    width: 255px;
+  }
+
+  &.hidden {
+    .menu__title,
+    .logo__text,
+    .logo__icon {
+      display: inline;
+    }
+  }
+  @include tablets {
+    width: 104px;
+    z-index: 110;
+  }
+
+  @include phones {
+    width: 8px;
+    transition: .2s;
+
+    &.active {
+      width: 194px;
+    }
+  }
+}
+
+.sidebar__btn {
+  display: none;
+  position: absolute;
+  right: -31px;
+  top: 44px;
+  
+  @include tablets {
+    display: block;
+  }
+}

@@ -1,0 +1,29 @@
+.cards {
+  font-family: $ffRoboto;
+}
+
+.cards__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -20px;
+
+  @include phones {
+    margin-left: -20px;
+    justify-content: center;
+  }
+}
+
+.cards__item {
+  min-width: calc(100% / 3 - 20px);
+  margin-left: 20px;
+  margin-bottom: 15px;
+
+  @include tablets {
+    min-width: calc(100% / 2 - 20px);
+  }
+
+  @include phones {
+    max-width: 268px;
+    margin-left: 15px;
+  }
+}

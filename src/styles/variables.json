@@ -1,6 +1,23 @@
 {
+  "color-layout": "#FAFAFA",
+  "black": "#000",
+  "black-opacity5": "rgba(#000, 0.5);",
+  "red": "#DF212D",
   "text-color": "#414c63",
+  "text-color-menu-black": "#333333",
   "links-color": "#4b6fd7",
+  "gray-color-opacity1": "rgba(51, 51, 51, 0.2)",
+  "gray": "#D6D6D6",
+  "white": "#fff",
+  "white-sand": "#E5E5E5",
+  "blue-sand": "#F3F4F9",
+  "menu-hover-blue": "#34ABE0",
+
+  "ffRoboto": "Roboto",
+  "ffOpenSans": "Open Sans",
+  "ffPoppins": "Poppins",
+
+
   "bp-desktop-hd": "1800px",
   "bp-desktop": "1200px",
   "bp-tablets": "768px",

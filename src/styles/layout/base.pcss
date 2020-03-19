@@ -1,45 +1,47 @@
 html {
-  @include desktop {
-    font-size: 15px;
-  }
-  @include tablets {
+  @include phones {
     font-size: 14px;
   }
 }
+
 body,
 html {
   height: 100%;
 }
 
+.body__hidden {
+  overflow: hidden;
+}
+
 body {
-  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-family: $ffOpenSans, Helvetica, sans-serif;
   font-size: 16px;
-  line-height: 1.42;
+  line-height: 1.15;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: $text-color;
+  color: $black;
+  background-color: $color-layout;
 }
 
 .wrapper {
   overflow: hidden;
   min-height: 100%;
   position: relative;
+  display: flex;
+
+  @include phones {
+    display: -webkit-box;
+  }
 }
 
 .container {
   margin: 0 auto;
-  max-width: 1480px;
+  max-width: 1080px;
   width: 95%;
-  // width: 1490px;
 
   @include phones {
     width: 85%;
   }
-}
-
-.fullscreen-section {
-  height: 100vh;
-  min-height: 650px;
 }
 
 button {
@@ -84,6 +86,25 @@ a {
 
 img {
   display: block;
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 600;
+
+  &_medium {
+    font-size: 28px;
+  }
+
+  &_big {
+    font-size: 36px;
+    font-weight: 600;
+  }
+  @include tablets {
+    &_small {
+      font-size: 14px;
+    }
+  }
 }
