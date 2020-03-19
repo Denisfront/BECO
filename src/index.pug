@@ -10,7 +10,37 @@ html(lang="en")
   body
     .wrapper
       aside.sidebar
+        nav.menu
+          a(href='#').menu__btn
+          ul.menu__list
+            li.logo
+              a(href="#").logo__link
+                svg(class="logo__icon")
+                  use(href="sprite.svg#logo")
+                .logo__text beco
+            li.menu__item.active
+              a(href='#').menu__link
+                +icon('catalog', 'menu__icon icon-menu')
+                span.menu__title Каталог
+            li.menu__item
+              a(href='#').menu__link
+                +icon('health', 'menu__icon icon-menu')
+                span.menu__title Здоровье
+            li.menu__item
+              a(href='#').menu__link
+                +icon('heart', 'menu__icon icon-menu')
+                span.menu__title Красота
+            li.menu__item
+              a(href='#').menu__link
+                +icon('enjoy', 'menu__icon icon-menu')
+                span.menu__title Развлечение
+            li.menu__item
+              a(href='#').menu__link
+                +icon('car', 'menu__icon icon-menu')
+                span.menu__title Авто
       .page-content
+        header.header
+
         .maincontent
         //- +image('content/user.jpg', 'user-pic')
         //- +icon('link', 'link-class')

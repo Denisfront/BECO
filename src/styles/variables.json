@@ -1,6 +1,17 @@
 {
+  "color-layout": "#FAFAFA",
+  "black": "#000",
   "text-color": "#414c63",
+  "text-color-menu-black": "#333333",
   "links-color": "#4b6fd7",
+  "blue-sand": "#F3F4F9",
+  "menu-hover-blue": "#34ABE0",
+
+  "ffRoboto": "Roboto",
+  "ffOpenSans": "Open Sans",
+  "ffPoppins": "Poppins",
+
+
   "bp-desktop-hd": "1800px",
   "bp-desktop": "1200px",
   "bp-tablets": "768px",
