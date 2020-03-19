@@ -27,3 +27,4 @@ $ npm run имя_скрипта
 ```sh
 $ yarn имя_скрипта
 ```
+## Ссылка на рабочий сайт https://denisfront.github.io/BECO/dist/index.html
