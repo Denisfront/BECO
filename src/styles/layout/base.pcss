@@ -12,12 +12,12 @@ html {
 }
 
 body {
-  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-family: $ffOpenSans, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 1.42;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: $text-color;
+  color: $black;
   background-color: $color-layout;
 }
 
@@ -25,22 +25,17 @@ body {
   overflow: hidden;
   min-height: 100%;
   position: relative;
+  display: flex;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 1480px;
+  max-width: 1080px;
   width: 95%;
-  // width: 1490px;
 
   @include phones {
     width: 85%;
   }
-}
-
-.fullscreen-section {
-  height: 100vh;
-  min-height: 650px;
 }
 
 button {
@@ -87,4 +82,9 @@ img {
   display: block;
   max-width: 100%;
   max-height: 100%;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 600;
 }
