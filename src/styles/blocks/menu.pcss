@@ -1,5 +1,9 @@
 .menu {
   position: fixed;
+
+  @include tablets {
+    height: 100%;
+  }
 }
 
 .menu__icon {
@@ -29,8 +33,18 @@
   padding-left: 40px;
   position: relative;
 
+  @include phones {
+    padding-left: 0;
+  }
+
   &.active {
     color: $menu-hover-blue;
+    
+    @include phones {
+      &:before {
+        display: none;
+      }
+    }
     
     &:before {
       content: '';
@@ -44,7 +58,7 @@
     .icon-menu {
       stroke: $menu-hover-blue;
     }
-}
+  }
 
   &:last-child {
     margin-bottom: 0;
@@ -76,6 +90,12 @@
   width: 48px;
   height: 106px;
   fill: $blue-sand;
+}
+
+.menu-burger__svg {
+  position: absolute;
+  right: -1.0625rem;
+  top: -2.8125rem;
 }
 
 .menu__btn {
@@ -141,4 +161,12 @@
         transform: scale(0);
     }
 }
+}
+
+.hiiden-block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }

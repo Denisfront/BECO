@@ -4,44 +4,29 @@
   transition: .4s;
   position: relative;
 
-  &:hover {
-    width: 255px;
-    .menu__title,
-    .logo__text {
-      display: inline;
-    }
-
-    .menu-burger {
-      &:before {
-        transform: rotate(45deg);
-        top: 9px;
-      }
-
-      &:after {
-          transform: rotate(-45deg);
-          bottom: 9px;
-      } 
-      span {
-          transform: scale(0);
-      }
-    }
-  }
-
   &.active {
     width: 255px;
   }
+
   &.hidden {
     .menu__title,
-    .logo__text {
+    .logo__text,
+    .logo__icon {
       display: inline;
     }
   }
   @include tablets {
     width: 104px;
+    z-index: 110;
   }
 
   @include phones {
     width: 8px;
+    transition: .2s;
+
+    &.active {
+      width: 194px;
+    }
   }
 }
 

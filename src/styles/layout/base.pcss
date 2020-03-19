@@ -1,7 +1,16 @@
+html {
+  @include phones {
+    font-size: 14px;
+  }
+}
 
 body,
 html {
   height: 100%;
+}
+
+.body__hidden {
+  overflow: hidden;
 }
 
 body {
@@ -19,6 +28,10 @@ body {
   min-height: 100%;
   position: relative;
   display: flex;
+
+  @include phones {
+    display: -webkit-box;
+  }
 }
 
 .container {

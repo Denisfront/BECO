@@ -6,6 +6,11 @@
   display: flex;
   flex-wrap: wrap;
   margin-left: -20px;
+
+  @include phones {
+    margin-left: -20px;
+    justify-content: center;
+  }
 }
 
 .cards__item {
@@ -15,5 +20,10 @@
 
   @include tablets {
     min-width: calc(100% / 2 - 20px);
+  }
+
+  @include phones {
+    max-width: 268px;
+    margin-left: 15px;
   }
 }
