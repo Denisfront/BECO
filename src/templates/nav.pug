@@ -1,28 +1,33 @@
 aside.sidebar
-        nav.menu
-          a(href='#').menu__btn
-          ul.menu__list
-            li.logo
-              a(href="#").logo__link
-                +icon('logo', 'logo__icon icon-menu')
-                .logo__text beco
-            li.menu__item.active
-              a(href='#').menu__link
-                +icon('catalog', 'menu__icon icon-menu')
-                span.menu__title Каталог
-            li.menu__item
-              a(href='#').menu__link
-                +icon('health', 'menu__icon icon-menu')
-                span.menu__title Здоровье
-            li.menu__item
-              a(href='#').menu__link
-                +icon('heart', 'menu__icon icon-menu')
-                span.menu__title Красота
-            li.menu__item
-              a(href='#').menu__link
-                +icon('enjoy', 'menu__icon icon-menu')
-                span.menu__title Развлечение
-            li.menu__item
-              a(href='#').menu__link
-                +icon('car', 'menu__icon icon-menu')
-                span.menu__title Авто
+  div.sidebar__btn
+    a.menu-burger
+      span
+    a(href='#').menu__btn
+      div.menu__svg
+        +icon('union', 'menu__svg-btn')
+  nav.menu
+    ul.menu__list
+      li.logo
+        a(href="#").logo__link
+          +icon('logo', 'logo__icon icon-menu')
+          .logo__text beco
+      li.menu__item.active
+        a(href='#').menu__link
+          +icon('catalog', 'menu__icon icon-menu')
+          span.menu__title Каталог
+      li.menu__item
+        a(href='#').menu__link
+          +icon('health', 'menu__icon icon-menu')
+          span.menu__title Здоровье
+      li.menu__item
+        a(href='#').menu__link
+          +icon('heart', 'menu__icon icon-menu')
+          span.menu__title Красота
+      li.menu__item
+        a(href='#').menu__link
+          +icon('enjoy', 'menu__icon icon-menu')
+          span.menu__title Развлечение
+      li.menu__item
+        a(href='#').menu__link
+          +icon('car', 'menu__icon icon-menu')
+          span.menu__title Авто

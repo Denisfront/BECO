@@ -73,6 +73,10 @@
 .card__titles {
   white-space: nowrap;
   margin-bottom: 26px;
+
+  @include tablets {
+    margin-bottom: 0;
+  }
 }
 
 .card__title {
@@ -96,9 +100,18 @@
 }
 
 .card__desc {
-  padding: 20px;
+  padding: 20px 20px 14px 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
+.card__img {
+  width: 130px;
+  height: 161px;
+
+  @include tablets {
+    width: 104px;
+    height: 144px;
+  }
+}
