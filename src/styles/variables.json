@@ -1,6 +1,8 @@
 {
   "color-layout": "#FAFAFA",
   "black": "#000",
+  "black-opacity5": "rgba(#000, 0.5);",
+  "red": "#DF212D",
   "text-color": "#414c63",
   "text-color-menu-black": "#333333",
   "links-color": "#4b6fd7",

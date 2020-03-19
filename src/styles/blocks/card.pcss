@@ -1,0 +1,104 @@
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  background-color: $white;
+  border-radius: 10px;
+  position: relative;
+  border: 2px solid transparent;
+  transition: .3s;
+
+  &:hover {
+    border: 2px solid $red;
+
+    .triangle-left {
+      border-left-color: $red;
+    }
+    .triangle-right {
+      border-right-color: $red;
+    }
+  }
+}
+
+.triangle-left {
+  border: 6px solid transparent;
+  top: 50%;
+  left: -1px;
+  z-index: 100;
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-left-color: $color-layout;
+  border-right-width: 0;
+  transition: .3s;
+
+  &:after {
+    content: "";
+    width: 1.25rem;
+    height: 1.25rem;
+    background: $color-layout;
+    display: block;
+    transform: rotate(45deg);
+    position: absolute;
+    top: -0.625rem;
+    left: -26px;
+  }
+}
+
+.triangle-right {
+  border: 6px solid transparent;
+  top: 50%;
+  right: -1px;
+  z-index: 100;
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-right-color: $color-layout;
+  border-left-width: 0;
+  transition: .3s;
+
+  &:after {
+    content: "";
+    width: 1.25rem;
+    height: 1.25rem;
+    background: $color-layout;
+    display: block;
+    transform: rotate(45deg);
+    position: absolute;
+    top: -0.625rem;
+    left: 6px;
+  }
+}
+
+.card__titles {
+  white-space: nowrap;
+  margin-bottom: 26px;
+}
+
+.card__title {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+
+.card__subtitle {
+  color: $black-opacity5;
+}
+
+.card__discount.title {
+  color: $red;
+}
+
+.card__discount-title {
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: $black-opacity5;
+}
+
+.card__desc {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
